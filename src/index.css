@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #01071f;
+  color: #e2e8f0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes stageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardRise {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-stage {
+  animation: stageEnter 650ms ease-out both;
+}
+
+.animate-card {
+  animation: cardRise 500ms ease-out both;
+}
