@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/napi/:path*",
+      "destination": "https://unsplash.com/napi/:path*"
+    }
+  ]
+}
